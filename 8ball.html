@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8-Ball</title>
+  </head>
+  <style>
+    background {
+      background-color: #53a3c0;
+      text-align: center;
+      font-family: "Helvetica Neue", arial;
+      font-weight: 100;
+    }
+    h1 {
+      font-weight: 900;
+      font-size: 3em;
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    h2 {
+      text-align: center;
+      color: rgb(134, 7, 102);
+    }
+    p {
+      margin: 0;
+    }
+    .textBox {
+      margin: 0 auto;
+      text-align: center;
+    }
+    div.eight-ball,
+    div.answer {
+      border: 1px solid transparent;
+      text-align: center;
+    }
+    div.eight-ball {
+      background-color: rgb(134, 7, 102);
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+    div.answer {
+      background-color: #f59ebf;
+      border-radius: 50%;
+      width: 50%;
+      height: 50%;
+      margin: 25% auto;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+
+    p#eight {
+      font-size: 5rem;
+      margin: 20% auto;
+      color: white;
+    }
+
+    p#answer {
+      padding: 20px;
+      letter-spacing: 2px;
+    }
+    .ButtonShake {
+      text-align: center;
+    }
+    button,
+    input {
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.2em;
+      font-family: "Helvetica Neue", arial;
+      font-weight: 100;
+      letter-spacing: 2px;
+      transition: 0.5s font-size;
+      text-align: center;
+    }
+    button:hover {
+      font-size: 1.5rem;
+    }
+  </style>
+  <body>
+    <h1>Magic 8 Ball</h1>
+    <h2>Tell me what is on your mind?</h2>
+
+    <div class="textBox"><input type="text" id input /></div>
+    <div class="eight-ball">
+      <div class="answer">
+        <p id="eight">8</p>
+        <p id="answer"></p>
+      </div>
+    </div>
+    <div class="ButtonShake"><button id="button">Shake</button></div>
+    <script src="8ball.js"></script>
+  </body>
+</html>
